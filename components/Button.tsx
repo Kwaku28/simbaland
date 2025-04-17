@@ -1,6 +1,11 @@
 import { TiLocationArrow } from "react-icons/ti";
 
-const Button = ({ text, className }: any) => {
+interface ButtonProps {
+  text: string;
+  className?: string;
+}
+
+const Button = ({ text, className }: ButtonProps) => {
   return (
     <a className={`${className ?? ""} cta-wrapper`}
     >
