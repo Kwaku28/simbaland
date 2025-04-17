@@ -2,7 +2,6 @@ import React from "react";
 import Button from "./Button";
 import { FlipWords } from "./ui/flip-words";
 import { flipWords } from "@/data";
-import { div } from "framer-motion/client";
 import Image from "next/image";
 
 const Hero = () => {

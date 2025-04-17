@@ -1,17 +1,5 @@
 import { simbaDen, simbaEdge, simbaVerse } from "@/data/ecosystem";
 import { cn } from "@/lib/utils";
-import {
-  IconAdjustmentsBolt,
-  IconBrain,
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
-  IconEngine,
-  IconHeart,
-  IconHelp,
-  IconRouteAltLeft,
-  IconTerminal2,
-} from "@tabler/icons-react";
 
 export function SimbaEdgeSection() {
   
