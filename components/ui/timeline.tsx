@@ -1,6 +1,5 @@
 "use client";
 import {
-  useMotionValueEvent,
   useScroll,
   useTransform,
   motion,
@@ -42,7 +41,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           Our Ecosystem
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          Come on a journey with us as we build the future of Africa's crypto
+          Come on a journey with us as we build the future of Africa&apos;s crypto
           landscape.
         </p>
       </div>
