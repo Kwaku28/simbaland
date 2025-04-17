@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #11071F;
   --foreground: #171717;
+  --voilet: #251043;
+  --purple: #A362FF;
+  --purple-dark: #190634;
+  --purple-light: #1A0B2E;
 }
 
 @theme inline {
@@ -10,17 +14,75 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-voilet: var(--voilet);
+  --color-purple: var(--purple);
+  --color-purple-dark: var(--purple-dark);
+  --color-purple-light: var(--purple-light);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #11071F;
     --foreground: #ededed;
   }
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .cta-wrapper {
+    @apply relative z-20 cursor-pointer;
+  }
+
+  .cta-button {
+    @apply pl-1 py-4 rounded-lg bg-voilet flex justify-around items-center relative cursor-pointer overflow-hidden;
+
+    .bg-circle {
+      @apply absolute -right-5 origin-center top-1/2 -translate-y-1/2 
+        w-[120%] h-[120%] group-hover:size-8 group-hover:right-3
+        rounded-full bg-white transition-all duration-500;
+    }
+
+    .text {
+      @apply uppercase text-sm md:text-lg text-black transition-all duration-500
+        group-hover:text-white group-hover:-translate-x-6 group-hover:text-[11px] translate-x-0;
+    }
+
+    .arrow-wrapper {
+      @apply group-hover:bg-white size-8 rounded-full absolute right-3 top-1/2 
+        -translate-y-1/2 flex justify-center items-center overflow-hidden;
+
+      .img {
+        @apply size-5 -translate-y-32 animate-bounce group-hover:translate-y-0 transition-all duration-500;
+      }
+    }
+  }
+
+  .heading {
+    @apply font-bold text-3xl md:text-5xl text-center;
+  }
+}
+
+.pulsate {
+  -webkit-animation: pulsate 3s ease-out;
+  -webkit-animation-iteration-count: infinite; 
+  opacity: 0.5;
+}
+@-webkit-keyframes pulsate {
+  0% { 
+      opacity: 0.3;
+  }
+  50% { 
+      opacity: 1.0;
+  }
+  100% { 
+      opacity: 0.3;
+  }
 }
