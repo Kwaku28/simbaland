@@ -11,7 +11,7 @@ const Hero = () => {
         <Image src='/simbaland-logo.png' alt="Simbaland Logo" width={100} height={100} className="object-cover" />
       </div>
       <div className="pt-36 pb-20 lg:px-20">
-        <div className="flex flex-col max-w-[89vw] md:max-w-2xl lg:max-w-[64vw] gap-4 absolute z-10">
+        <div className="flex flex-col max-w-[89vw] md:max-w-2xl lg:max-w-[64vw] gap-4 absolute top-58 lg:top-38 z-10">
           <h2 className="text-sm md:text-lg lg:text-2xl lg:mt-10">
             Welcome to <span className="text-purple">Simbaland</span>
           </h2>
