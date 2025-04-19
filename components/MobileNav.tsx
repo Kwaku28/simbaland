@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
+import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { IconMenuDeep, IconX } from "@tabler/icons-react";
 import Image from "next/image";
@@ -17,14 +17,14 @@ const MobileNavbar = () => {
   };
 
   return (
-    <nav className="flex fixed top-10 right-0 z-[5000] px-8 py-2 items-center justify-end space-x-10 h-14 w-full">
+    <nav className="md:hidden flex fixed top-10 right-0 z-[5000] px-8 py-2 items-center justify-end space-x-10 h-14 w-full">
       <div className="flex justify-end items-center w-full">
         <Button
           variant="ghost"
-          className="md:hidden cursor-pointer"
+          className="cursor-pointer"
           onClick={toggleMenu}
         >
-          {isOpen ? null : <IconMenuDeep className="size-8" />}
+          {isOpen ? null : <IconMenuDeep className="size-8 text-purple" />}
         </Button>
       </div>
 
