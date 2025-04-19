@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="max-h-screen">
+    <section className="h-screen">
       <div className="absolute top-8 left-1 lg:left-24 size-32 overflow-hidden">
         <Image src='/simbaland-logo.png' alt="Simbaland Logo" width={100} height={100} className="object-cover" />
       </div>
