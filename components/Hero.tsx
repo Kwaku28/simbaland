@@ -3,12 +3,10 @@ import Button from "./Button";
 import { FlipWords } from "./ui/flip-words";
 import { flipWords } from "@/data";
 import Image from "next/image";
-import { ThreeDMarqueeComponent } from "./Marquee";
 
 const Hero = () => {
   return (
     <section className="max-h-screen">
-      <ThreeDMarqueeComponent />
       <div className="absolute top-8 left-1 lg:left-24 size-32 overflow-hidden">
         <Image src='/simbaland-logo.png' alt="Simbaland Logo" width={100} height={100} className="object-cover" />
       </div>
