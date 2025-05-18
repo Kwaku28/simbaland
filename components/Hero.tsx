@@ -21,7 +21,7 @@ const Hero = () => {
           <h2 className="text-lg md:text-xl lg:text-2xl lg:mt-10 font-bold">
             Welcome to <span className="text-purple">Simbaland</span>
           </h2>
-          <h2 className="uppercase tracking-widest text-start text-[22px]/10 lg:text-4xl/10 max-w-90 lg:max-w-[48vw]">
+          <h2 className="uppercase tracking-widest text-purple font-bold text-start text-[22px]/10 lg:text-4xl/10 max-w-90 lg:max-w-[48vw]">
             Explore Web3 With Confidence.
           </h2>
 
