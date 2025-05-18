@@ -33,6 +33,7 @@ const Hero = () => {
           <Button
             text="Join The Movement"
             className="md:w-50 md:h-16 w-40 h-12 mt-5"
+            link="mailto:simbaland.smart@gmail.com"
           />
         </div>
       </div>
