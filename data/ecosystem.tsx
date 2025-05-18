@@ -1,11 +1,14 @@
-import { SimbaDenSection, SimbaEdgeSection, SimbaVerseSection } from "@/components/ui/featue-card";
+import {
+  SimbaDenSection,
+  SimbaEdgeSection,
+  SimbaVerseSection,
+} from "@/components/ui/featue-card";
 import {
   IconBook,
   IconBrain,
   IconCoins,
   IconCurrencyDollar,
   IconDeviceIpadCog,
-  IconEaseInOut,
   IconEngine,
   IconPlugConnected,
   IconTrendingUp,
@@ -39,35 +42,30 @@ export const simbaEdge = [
 
 export const simbaVerse = [
   {
-    title: "Empowering African Web3",
+    title: "Simplifying Web3 Education",
     description:
-      "An educational hub designed to onboard, train, and empower the next wave of African Web3 natives.",
+      "SimbaVerse is Simbaland’s educational hub, offering courses, webinars, and community-led learning for beginners and enthusiasts",
     icon: <IconPlugConnected />,
   },
   {
     title: "Learn Web3 Today",
     description:
-      "Courses, live sessions, and practical insights — whether you’re a beginner or a pro.",
+      "From crypto basics to trading strategies, it’s designed to build competence without complexity",
     icon: <IconBook />,
-  },
-  {
-    title: "Master the Market",
-    description: "Learn the game. Master the market.",
-    icon: <IconTrendingUp />,
   },
 ];
 
 export const simbaDen = [
   {
-    title: "Launchpad for Africa",
+    title: "Early-Stage Access",
     description:
-      "Simbaland’s upcoming launchpad gives retail African investors first-look access to vetted early-stage Web3 projects.",
+      "Simba’s Den is Simbaland’s project discovery platform, helping users explore select early-stage Web3 initiatives",
     icon: <IconDeviceIpadCog />,
   },
   {
-    title: "Curated Web3 Deals",
+    title: "Carefully Curated",
     description:
-      "No tokens. No noise. Just curated deal flow, straight from the heart of the Web3 revolution.",
+      "We conduct due diligence on featured projects to provide transparency and reduce research fatigue — but participation is always at your own risk",
     icon: <IconCoins />,
   },
 ];
@@ -83,27 +81,30 @@ export const ecoData = [
         <SimbaEdgeSection />
       </div>
     ),
+    icon: '/simba-edge.png',
   },
   {
     title: "SimbaVerse",
     content: (
       <div>
         <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-          Africa’s Gateway to Crypto Mastery.
+          Learn & Level Up
         </p>
         <SimbaVerseSection />
       </div>
     ),
+    icon: '/simbaland.png',
   },
   {
-    title: "Simba’s Den (Coming Soon)",
+    title: "Simba’s Den",
     content: (
       <div>
         <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-          Launch Early. Invest Early.
+          Access Curated Opportunities
         </p>
         <SimbaDenSection />
       </div>
     ),
+    icon: '/simba-den.png',
   },
 ];
