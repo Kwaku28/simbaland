@@ -4,12 +4,6 @@ export const navItems = [
   { name: "Contact", link: "#contact" },
 ];
 
-export const flipWords = [
-  "Traders",
-  "Builders",
-  "Investors"
-]
-
 export const images = [
   "https://assets.aceternity.com/cloudinary_bkp/3d-card.png",
   "https://assets.aceternity.com/animated-modal.png",
