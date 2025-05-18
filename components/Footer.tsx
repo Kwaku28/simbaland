@@ -19,7 +19,7 @@ const Footer = () => {
           We’re not building this alone. Join thousands of learners, traders,
           and investors shaping Africa’s crypto future.
         </p>
-        <a href="example.com" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:simbaland.smart@gmail.com" target="_blank" rel="noopener noreferrer">
           <MagicButton
             title="Join Now"
             icon={<FaLocationArrow />}
@@ -83,7 +83,7 @@ const Footer = () => {
 const socialMedia = [
   {
     id: 1,
-    link: "https://x.com",
+    link: "https://x.com/simbaland25?s=21&t=nt9fQQq86uCEValOxW9VwA",
     icon: <IconBrandX />,
   },
   {
