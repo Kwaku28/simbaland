@@ -1,3 +1,6 @@
+import { words } from "@/data";
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
+
 const About = () => {
   return (
     <div
@@ -8,10 +11,8 @@ const About = () => {
         <h2 className="heading">About us</h2>
       </div>
       <div className="flex flex-col md:grid md:grid-cols-2 gap-8 items-center justify-center">
-        <p className="text-sm md:text-lg lg:text-4xl lg:max-w-[64vw]">
-          One Platform. Multiple Avenues
-        </p>
-        <p className="text-sm md:text-lg lg:text-xl lg:max-w-[64vw]">
+        <TypewriterEffectSmooth words={words} />
+        <p className="text-sm md:text-lg lg:text-xl lg:max-w-[64vw] text-neutral-100">
           Simbaland is an integrated ecosystem designed to help individuals
           navigate the complex world of Web3. Our platform hosts a suite of
           services built to empower users with knowledge, strategy, and early
