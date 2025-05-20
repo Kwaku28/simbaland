@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "motion/react";
 
 import { useEffect, useState } from "react";
 
-type Testimonial = {
+type Contact = {
   email: string;
   telegram?: string;
   teleLink?: string;
@@ -13,21 +13,21 @@ type Testimonial = {
   designation: string;
   src?: string;
 };
-export const AnimatedTestimonials = ({
-  testimonials,
+export const Animatedcontact = ({
+  contact,
   autoplay = false,
 }: {
-  testimonials: Testimonial[];
+  contact: Contact[];
   autoplay?: boolean;
 }) => {
   const [active, setActive] = useState(0);
 
   const handleNext = () => {
-    setActive((prev) => (prev + 1) % testimonials.length);
+    setActive((prev) => (prev + 1) % contact.length);
   };
 
   const handlePrev = () => {
-    setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setActive((prev) => (prev - 1 + contact.length) % contact.length);
   };
 
   const isActive = (index: number) => {
@@ -50,7 +50,7 @@ export const AnimatedTestimonials = ({
         <div>
           <div className="relative h-60 w-full">
             <AnimatePresence>
-              {testimonials.map((testimonial, index) => (
+              {contact.map((testimonial, index) => (
                 testimonial.src ? (
                   <motion.div
                     key={testimonial.src}
@@ -67,7 +67,7 @@ export const AnimatedTestimonials = ({
                       rotate: isActive(index) ? 0 : randomRotateY(),
                       zIndex: isActive(index)
                         ? 40
-                        : testimonials.length + 2 - index,
+                        : contact.length + 2 - index,
                       y: isActive(index) ? [0, -80, 0] : 0,
                     }}
                     exit={{
@@ -107,7 +107,7 @@ export const AnimatedTestimonials = ({
                       rotate: isActive(index) ? 0 : randomRotateY(),
                       zIndex: isActive(index)
                         ? 40
-                        : testimonials.length + 2 - index,
+                        : contact.length + 2 - index,
                       y: isActive(index) ? [0, -80, 0] : 0,
                     }}
                     exit={{
@@ -157,13 +157,13 @@ export const AnimatedTestimonials = ({
             }}
           >
             <h3 className="text-2xl font-bold text-neutral-100">
-              {testimonials[active].name}
+              {contact[active].name}
             </h3>
             <p className="text-sm text-neutral-300">
-              {testimonials[active].designation}
+              {contact[active].designation}
             </p>
             <motion.p className="mt-8 text-lg text-neutral-300">
-              {testimonials[active].email.split(" ").map((word, index) => (
+              {contact[active].email.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
                   initial={{
@@ -187,17 +187,17 @@ export const AnimatedTestimonials = ({
                 </motion.span>
               ))}
             </motion.p>
-            {testimonials[active].telegram && (
+            {contact[active].telegram && (
                 <motion.p className="mt-2 text-sm text-neutral-300 ">
                 
                 <a
-                  href={testimonials[active].teleLink}
+                  href={contact[active].teleLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-purple flex gap-3 w-fit"
                 >
                   <IconBrandTelegram />
-                  {testimonials[active].telegram}
+                  {contact[active].telegram}
                 </a>
                 </motion.p>
             )}
