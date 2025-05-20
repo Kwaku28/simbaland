@@ -49,7 +49,7 @@ const MobileNavbar = () => {
             href={navItem.link}
             onClick={toggleMenu}
             className={cn(
-              "dark:text-neutral-50  text-neutral-600 dark:hover:text-purple hover:text-purple"
+              "text-neutral-50  dark:hover:text-purple hover:text-purple"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
