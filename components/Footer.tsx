@@ -4,22 +4,28 @@ import MagicButton from "./ui/MagicButton";
 import { IconBrandTelegram, IconBrandX } from "@tabler/icons-react";
 import Link from "next/link";
 import Image from "next/image";
-import { navItems } from "@/data";
+import { contact, navItems } from "@/data";
 import { cn } from "@/lib/utils";
+import { Animatedcontact } from "./ui/animated-testimonials";
 
 const Footer = () => {
   return (
     <footer className="w-full pt-10 pb-10" id="contact">
+      <Animatedcontact contact={contact} />
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
           <span className="text-purple">Join </span>
           the Simbaland Tribe
         </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center text-sm md:text-lg">
+        <p className="text-neutral-200 md:mt-10 my-5 text-center text-sm md:text-lg">
           We’re not building this alone. Join thousands of learners, traders,
           and investors shaping Africa’s crypto future.
         </p>
-        <a href="mailto:simbaland.smart@gmail.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="mailto:simbaland.smart@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <MagicButton
             title="Join Now"
             icon={<FaLocationArrow />}
@@ -38,19 +44,19 @@ const Footer = () => {
               height={100}
             />
           </div>
-          <p className="hidden md:block md:text-base text-sm md:font-normal font-light">
+          <p className="hidden md:block md:text-base text-neutral-100 text-sm md:font-normal font-light">
             Copyright © 2025 Simbaland
           </p>
         </div>
 
         <div className="flex flex-col items-start justify-start gap-3 mb-5 w-full md:w-auto">
-          <h1 className="text-lg font-semibold">Explore</h1>
+          <h1 className="text-lg font-semibold text-neutral-100">Explore</h1>
           {navItems.map((navItem: any, idx: number) => (
             <Link
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
-                "dark:text-neutral-50  text-neutral-600 dark:hover:text-purple hover:text-purple"
+                "text-neutral-100 dark:hover:text-purple hover:text-purple"
               )}
             >
               <span className="block sm:hidden">{navItem.icon}</span>
@@ -60,13 +66,18 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col items-start md:gap-3 gap-6 max-w-lg mb-5">
-          <p className="text-start text-sm lg:w-lg">
+          <p className="text-start text-sm lg:w-lg text-neutral-100">
             Have questions, partnerships, or media inquiries? Let’s talk — this
             is just the beginning.
           </p>
           <div className="flex flex-row justify-start gap-3 md:gap-5">
             {socialMedia.map((social) => (
-              <Link key={social.id} href={social.link} target="_blank">
+              <Link
+                key={social.id}
+                href={social.link}
+                target="_blank"
+                className="text-neutral-100 dark:hover:text-purple hover:text-purple"
+              >
                 {social.icon}
               </Link>
             ))}
