@@ -10,7 +10,7 @@ const Approach = () => {
       <h1 className="heading text-start">
         Why <span className="text-purple">Simbaland?</span>
       </h1>
-      <p className="text-sm mt-5 md:text-2xl md:mt-10">
+      <p className="text-sm mt-5 md:text-2xl md:mt-10 text-neutral-100">
         No fluff, just results
       </p>
       <div className="my-10 md:my-15 flex flex-col lg:flex-row items-center justify-center gap-6">
@@ -93,25 +93,25 @@ const Card = ({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onClick={handleToggle}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2] w-full p-4 h-[22rem] relative rounded-3xl"
+      className="border group/canvas-card flex items-center justify-center border-white/[0.2] w-full p-4 h-[22rem] relative rounded-3xl"
     >
       <Icon
-        className={`absolute h-10 w-10 -top-3 -left-3 dark:text-white/[0.3] text-black transition-opacity duration-200 ${
+        className={`absolute h-10 w-10 -top-3 -left-3 text-white/[0.3] transition-opacity duration-200 ${
           hovered || clicked ? "opacity-0" : "opacity-100"
         }`}
       />
       <Icon
-        className={`absolute h-10 w-10 -bottom-3 -left-3 dark:text-white/[0.3] text-black transition-opacity duration-200 ${
+        className={`absolute h-10 w-10 -bottom-3 -left-3 text-white/[0.3] transition-opacity duration-200 ${
           hovered || clicked ? "opacity-0" : "opacity-100"
         }`}
       />
       <Icon
-        className={`absolute h-10 w-10 -top-3 -right-3 dark:text-white/[0.3] text-black transition-opacity duration-200 ${
+        className={`absolute h-10 w-10 -top-3 -right-3 text-white/[0.3] transition-opacity duration-200 ${
           hovered || clicked ? "opacity-0" : "opacity-100"
         }`}
       />
       <Icon
-        className={`absolute h-10 w-10 -bottom-3 -right-3 dark:text-white/[0.3] text-black transition-opacity duration-200 ${
+        className={`absolute h-10 w-10 -bottom-3 -right-3 text-white/[0.3]  transition-opacity duration-200 ${
           hovered || clicked ? "opacity-0" : "opacity-100"
         }`}
       />
@@ -121,7 +121,7 @@ const Card = ({
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="h-full w-full absolute inset-0"
+            className="h-full w-full absolute inset-0 rounded-3xl overflow-hidden"
           >
             {children}
           </motion.div>
