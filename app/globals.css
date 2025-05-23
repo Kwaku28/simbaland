@@ -7,6 +7,8 @@
   --purple: #A362FF;
   --purple-dark: #190634;
   --purple-light: #1A0B2E;
+  --golden-brown: #ffd19d;
+  --back-green: #507f21;
 }
 
 @theme inline {
@@ -18,6 +20,8 @@
   --color-purple: var(--purple);
   --color-purple-dark: var(--purple-dark);
   --color-purple-light: var(--purple-light);
+  --color-golden-brown: var(--golden-brown);
+  --color-back-green: var(--back-green);
 }
 
 @media (prefers-color-scheme: dark) {
