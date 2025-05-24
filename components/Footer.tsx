@@ -10,7 +10,7 @@ import { Animatedcontact } from "./ui/animated-testimonials";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-10 pb-10" id="contact">
+    <footer className="w-full py-10 px-5 md:px-10" id="contact">
       <Animatedcontact contact={contact} />
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">

@@ -5,7 +5,7 @@ import { ecoData } from "@/data/ecosystem";
 const Ecosystem = () => {
   
   return (
-    <div className="relative w-full overflow-clip" id="ecosystem">
+    <div className="relative w-full px-5 md:px-10 overflow-clip" id="ecosystem">
       <Timeline data={ecoData} />
     </div>
   );
