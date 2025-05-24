@@ -93,7 +93,7 @@ export const ecoData = [
         <SimbaVerseSection />
       </div>
     ),
-    icon: '/simbaland.png',
+    icon: '/simba-verse.jpg',
   },
   {
     title: "Simba’s Den",
