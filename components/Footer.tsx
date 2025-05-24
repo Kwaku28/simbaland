@@ -10,7 +10,7 @@ import { Animatedcontact } from "./ui/animated-testimonials";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-10 pb-10" id="contact">
+    <footer className="w-full py-10 px-5 md:px-10" id="contact">
       <Animatedcontact contact={contact} />
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
@@ -38,7 +38,7 @@ const Footer = () => {
         <div className="flex flex-col items-start justify-start md:gap-3 gap-6">
           <div className="flex justify-center w-full md:justify-start items-center mb-5">
             <Image
-              src="/simbaland-logo.png"
+              src="/simbaland-white.png"
               alt="logo"
               width={100}
               height={100}

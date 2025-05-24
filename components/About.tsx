@@ -4,7 +4,7 @@ import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 const About = () => {
   return (
     <div
-      className="flex flex-col max-w-[89vw] h-screen items-center justify-center gap-4 lg:pt-36 pb-30 lg:px-20 lg:mb-36"
+      className="flex flex-col max-w-[89vw] h-screen items-center justify-center gap-4 lg:pt-36 pb-30 lg:px-20 lg:mb-36 px-5"
       id="about"
     >
       <div className="flex items-center justify-center border-5 border-purple p-3 mb-5 lg:mb-20">

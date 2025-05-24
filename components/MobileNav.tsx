@@ -58,7 +58,7 @@ const MobileNavbar = () => {
         ))}
           <div className="absolute bottom-2 left-22 size-32 overflow-hidden">
             <Image
-              src="/simbaland-logo.png"
+              src="/simbaland-white.png"
               alt="Simbaland Logo"
               width={100}
               height={100}
