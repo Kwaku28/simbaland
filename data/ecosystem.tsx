@@ -24,7 +24,7 @@ export const simbaEdge = [
   {
     title: "Human-Powered Signals",
     description:
-      "Backed by a human core (not bots), Simba's Edge delivers high-accuracy, multi-TP trading signals, curated by our proprietary intelligence engine.",
+      "Backed by a human core (not bots), Simba’s Edge delivers high-accuracy, multi-TP trading signals, curated by our proprietary intelligence engine.",
     icon: <IconTrendingUp />,
   },
   {
@@ -35,7 +35,7 @@ export const simbaEdge = [
   {
     title: "100% Human Touch",
     description:
-      "Bots don't trade like this. We've seen the charts — human edge wins.",
+      "Bots don’t trade like this. We’ve seen the charts — human edge wins.",
     icon: <IconBrain />,
   },
 ];
@@ -44,13 +44,13 @@ export const simbaVerse = [
   {
     title: "Simplifying Web3 Education",
     description:
-      "SimbaVerse is Simbaland's educational hub, offering courses, webinars, and community-led learning for beginners and enthusiasts",
+      "SimbaVerse is Simbaland’s educational hub, offering courses, webinars, and community-led learning for beginners and enthusiasts",
     icon: <IconPlugConnected />,
   },
   {
     title: "Learn Web3 Today",
     description:
-      "From crypto basics to trading strategies, it's designed to build competence without complexity",
+      "From crypto basics to trading strategies, it’s designed to build competence without complexity",
     icon: <IconBook />,
   },
 ];
@@ -59,7 +59,7 @@ export const simbaDen = [
   {
     title: "Early-Stage Access",
     description:
-      "Simba's Den is Simbaland's project discovery platform, helping users explore select early-stage Web3 initiatives",
+      "Simba’s Den is Simbaland’s project discovery platform, helping users explore select early-stage Web3 initiatives",
     icon: <IconDeviceIpadCog />,
   },
   {
@@ -72,9 +72,7 @@ export const simbaDen = [
 
 export const ecoData = [
   {
-    title: (
-      <span className="text-golden-brown">Simba&apos;s Edge</span>
-    ),
+    title: "Simba's Edge",
     content: (
       <div>
         <p className="mb-8 text-xs font-normal md:text-sm text-neutral-200">
@@ -86,9 +84,7 @@ export const ecoData = [
     icon: '/simba-edge.jpg',
   },
   {
-    title: (
-      <span className="text-golden-brown">SimbaVerse</span>
-    ),
+    title: "SimbaVerse",
     content: (
       <div>
         <p className="mb-8 text-xs font-normal md:text-sm text-neutral-200">
@@ -97,12 +93,10 @@ export const ecoData = [
         <SimbaVerseSection />
       </div>
     ),
-    icon: '/simba-verse.jpg',
+    icon: '/simbaland.png',
   },
   {
-    title: (
-      <span className="text-golden-brown">Simba&apos;s Den</span>
-    ),
+    title: "Simba’s Den",
     content: (
       <div>
         <p className="mb-4 text-xs font-normal md:text-sm text-neutral-200">
