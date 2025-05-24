@@ -9,6 +9,7 @@
   --purple-light: #1A0B2E;
   --golden-brown: #ffd19d;
   --back-green: #507f21;
+  --rich-orange: #eb6a26;
 }
 
 @theme inline {
@@ -22,6 +23,7 @@
   --color-purple-light: var(--purple-light);
   --color-golden-brown: var(--golden-brown);
   --color-back-green: var(--back-green);
+  --color-rich-orange: var(--rich-orange);
 }
 
 @media (prefers-color-scheme: dark) {
