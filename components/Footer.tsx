@@ -10,14 +10,22 @@ import { Animatedcontact } from "./ui/animated-testimonials";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-10 px-5 md:px-10" id="contact">
+    <footer
+      className="w-full py-10 px-5 md:px-10"
+      id="contact"
+      style={{
+        backgroundImage: "url('/contact-background.jpg')",
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+      }}
+    >
       <Animatedcontact contact={contact} />
       <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
+        <h1 className="heading lg:max-w-[45vw] text-black">
           <span className="text-purple">Join </span>
           the Simbaland Tribe
         </h1>
-        <p className="text-neutral-200 md:mt-10 my-5 text-center text-sm md:text-lg">
+        <p className="text-neutral-900 md:mt-10 my-5 text-center text-sm md:text-lg">
           We’re not building this alone. Join thousands of learners, traders,
           and investors shaping Africa’s crypto future.
         </p>
@@ -38,25 +46,25 @@ const Footer = () => {
         <div className="flex flex-col items-start justify-start md:gap-3 gap-6">
           <div className="flex justify-center w-full md:justify-start items-center mb-5">
             <Image
-              src="/simbaland-white.png"
+              src="/simbaland.png"
               alt="logo"
               width={100}
               height={100}
             />
           </div>
-          <p className="hidden md:block md:text-base text-neutral-100 text-sm md:font-normal font-light">
+          <p className="hidden md:block md:text-base text-slate-950 text-sm md:font-normal font-light">
             Copyright © 2025 Simbaland
           </p>
         </div>
 
         <div className="flex flex-col items-start justify-start gap-3 mb-5 w-full md:w-auto">
-          <h1 className="text-lg font-semibold text-neutral-100">Explore</h1>
+          <h1 className="text-lg font-semibold text-slate-950">Explore</h1>
           {navItems.map((navItem: any, idx: number) => (
             <Link
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
-                "text-neutral-100 dark:hover:text-purple hover:text-purple"
+                "text-slate-950 dark:hover:text-purple hover:text-purple"
               )}
             >
               <span className="block sm:hidden">{navItem.icon}</span>
@@ -66,7 +74,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col items-start md:gap-3 gap-6 max-w-lg mb-5">
-          <p className="text-start text-sm lg:w-lg text-neutral-100">
+          <p className="text-start text-sm md:text-[16px] lg:w-lg text-slate-950">
             Have questions, partnerships, or media inquiries? Let’s talk — this
             is just the beginning.
           </p>
@@ -76,7 +84,7 @@ const Footer = () => {
                 key={social.id}
                 href={social.link}
                 target="_blank"
-                className="text-neutral-100 dark:hover:text-purple hover:text-purple"
+                className="text-slate-950 dark:hover:text-purple hover:text-purple"
               >
                 {social.icon}
               </Link>
@@ -84,7 +92,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-sm text-center font-light mt-5 md:hidden">
+      <p className="text-sm text-center font-light mt-5 md:hidden text-slate-950">
         Copyright © 2025 Simbaland
       </p>
     </footer>
