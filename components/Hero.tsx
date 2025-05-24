@@ -25,7 +25,7 @@ const Hero = () => {
         />
       </div>
       
-      <div className="pt-36 pb-20 lg:px-20 relative z-10">
+      <div className="pt-36 pb-20 px-5 lg:px-20 relative z-10">
         <div className="flex flex-col max-w-[89vw] md:max-w-2xl lg:max-w-[64vw] gap-4 absolute top-58 lg:top-38 z-10">
           <h2 className="text-lg md:text-xl lg:text-2xl lg:mt-10 font-bold text-neutral-100">
             Welcome to <span className="text-purple">Simbaland</span>
