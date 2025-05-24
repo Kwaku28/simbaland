@@ -57,7 +57,7 @@ const Approach = () => {
         >
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-sky-600"
+            containerClassName="bg-skulled-gray-900"
             colors={[[125, 211, 252]]}
           />
         </Card>
@@ -95,27 +95,6 @@ const Card = ({
       onClick={handleToggle}
       className="border group/canvas-card flex items-center justify-center border-white/[0.2] w-full p-4 h-[22rem] relative rounded-3xl"
     >
-      <Icon
-        className={`absolute h-10 w-10 -top-3 -left-3 text-white/[0.3] transition-opacity duration-200 ${
-          hovered || clicked ? "opacity-0" : "opacity-100"
-        }`}
-      />
-      <Icon
-        className={`absolute h-10 w-10 -bottom-3 -left-3 text-white/[0.3] transition-opacity duration-200 ${
-          hovered || clicked ? "opacity-0" : "opacity-100"
-        }`}
-      />
-      <Icon
-        className={`absolute h-10 w-10 -top-3 -right-3 text-white/[0.3] transition-opacity duration-200 ${
-          hovered || clicked ? "opacity-0" : "opacity-100"
-        }`}
-      />
-      <Icon
-        className={`absolute h-10 w-10 -bottom-3 -right-3 text-white/[0.3]  transition-opacity duration-200 ${
-          hovered || clicked ? "opacity-0" : "opacity-100"
-        }`}
-      />
-
       <AnimatePresence>
         {(hovered || clicked) && (
           <motion.div
@@ -166,22 +145,6 @@ const AceternityIcon = ({ order }: { order: string }) => {
         </span>
       </button>
     </div>
-  );
-};
-
-export const Icon = ({ className, ...rest }: any) => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      stroke="currentColor"
-      className={className}
-      {...rest}
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
-    </svg>
   );
 };
 
