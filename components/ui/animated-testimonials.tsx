@@ -156,13 +156,13 @@ export const Animatedcontact = ({
               ease: "easeInOut",
             }}
           >
-            <h3 className="text-2xl font-bold text-neutral-100">
+            <h3 className="text-2xl lg:text-3xl font-bold text-white">
               {contact[active].name}
             </h3>
-            <p className="text-sm text-neutral-300">
+            <p className="text-sm lg:text-xl text-neutral-100">
               {contact[active].designation}
             </p>
-            <motion.p className="mt-8 text-lg text-neutral-300">
+            <motion.p className="mt-8 text-lg text-neutral-100">
               {contact[active].email.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
@@ -188,7 +188,7 @@ export const Animatedcontact = ({
               ))}
             </motion.p>
             {contact[active].telegram && (
-                <motion.p className="mt-2 text-sm text-neutral-300 ">
+                <motion.p className="mt-2 text-sm text-neutral-100 ">
                 
                 <a
                   href={contact[active].teleLink}
@@ -205,13 +205,13 @@ export const Animatedcontact = ({
           <div className="flex gap-4 pt-12 md:pt-0">
             <button
               onClick={handlePrev}
-              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
+              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800 cursor-pointer"
             >
               <IconArrowLeft className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:rotate-12 dark:text-neutral-400" />
             </button>
             <button
               onClick={handleNext}
-              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
+              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800 cursor-pointer"
             >
               <IconArrowRight className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:-rotate-12 dark:text-neutral-400" />
             </button>
