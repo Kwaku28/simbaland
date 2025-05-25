@@ -24,7 +24,7 @@ const MobileNavbar = () => {
           className="cursor-pointer"
           onClick={toggleMenu}
         >
-          {isOpen ? null : <IconMenuDeep className="size-8 text-purple" />}
+          {isOpen ? null : <IconMenuDeep className="size-8 text-golden-brown" />}
         </Button>
       </div>
 
@@ -49,7 +49,7 @@ const MobileNavbar = () => {
             href={navItem.link}
             onClick={toggleMenu}
             className={cn(
-              "text-neutral-50 hover:text-purple w-fit"
+              "text-neutral-50 hover:text-golden-brown w-fit"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
