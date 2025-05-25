@@ -10,7 +10,7 @@ const oswald = Oswald({
 
 const Hero = () => {
   return (
-    <section className="h-[80vh] lg:h-screen flex justify-start items-center bg-[url('/simba-mobile-back.jpg')] md:bg-[url('/simba-background-head.jpg')] bg-cover bg-center bg-no-repeat">
+    <section className="h-[80vh] lg:h-screen flex justify-start items-center bg-[url('/simba-background-head.jpg')] bg-cover bg-center bg-no-repeat">
       {/* Optional overlay for better text readability - removed or reduced for brighter background */}
       {/* <div className="absolute inset-0 bg-black/40"></div> */}
 
@@ -33,8 +33,8 @@ const Hero = () => {
           <h2 className={`${oswald.className} text-golden-brown uppercase tracking-widest font-bold text-start text-[22px]/10 md:text-4xl/14 lg:text-6xl/16 max-w-92 md:max-w-full lg:max-w-[52vw] 2xl:text-8xl/26`}>
             Explore Web3 With Confidence.
           </h2>
-          <p className="text-lg lg:text-xl lg:max-w-[44vw] 2xl:text-3xl 2xl:max-w-[48vw] text-neutral-100">
-            Simplified crypto trading, education, and curated <br /> opportunities —
+          <p className="text-lg lg:text-xl max-w-[72vw] lg:max-w-[44vw] 2xl:text-3xl 2xl:max-w-[48vw] text-neutral-100">
+            Simplified crypto trading, education, and curated opportunities —
             all in one platform.
           </p>
           <Button
