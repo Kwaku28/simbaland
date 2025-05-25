@@ -156,13 +156,13 @@ export const Animatedcontact = ({
               ease: "easeInOut",
             }}
           >
-            <h3 className="text-2xl lg:text-3xl font-bold text-white">
+            <h3 className="text-2xl lg:text-3xl 2xl:text-4xl font-bold text-white">
               {contact[active].name}
             </h3>
-            <p className="text-sm lg:text-xl text-neutral-100">
+            <p className="text-sm lg:text-xl 2xl:text-2xl text-neutral-100">
               {contact[active].designation}
             </p>
-            <motion.p className="mt-8 text-lg text-neutral-100">
+            <motion.p className="mt-8 text-lg 2xl:text-xl text-neutral-100">
               {contact[active].email.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
@@ -188,7 +188,7 @@ export const Animatedcontact = ({
               ))}
             </motion.p>
             {contact[active].telegram && (
-                <motion.p className="mt-2 text-sm text-neutral-100 ">
+                <motion.p className="mt-2 text-sm 2xl:text-xl text-neutral-100 ">
                 
                 <a
                   href={contact[active].teleLink}
@@ -196,7 +196,7 @@ export const Animatedcontact = ({
                   rel="noopener noreferrer"
                   className="hover:text-purple flex gap-3 w-fit"
                 >
-                  <IconBrandTelegram />
+                  <IconBrandTelegram className="2xl:size-8" />
                   {contact[active].telegram}
                 </a>
                 </motion.p>

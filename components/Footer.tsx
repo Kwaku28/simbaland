@@ -15,17 +15,17 @@ const Footer = () => {
       id="contact"
       style={{
         backgroundImage: "url('/contact-background.jpg')",
-        backgroundSize: "contain",
+        backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
       <Animatedcontact contact={contact} />
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw] text-black">
-          <span className="text-purple">Join </span>
+          <span className="text-white">Join </span>
           the Simbaland Tribe
         </h1>
-        <p className="text-neutral-900 md:mt-10 my-5 text-center text-sm md:text-lg">
+        <p className="text-neutral-900 md:mt-10 my-5 text-center text-sm md:text-lg 2xl:text-2xl">
           We’re not building this alone. Join thousands of learners, traders,
           and investors shaping Africa’s crypto future.
         </p>
@@ -44,21 +44,22 @@ const Footer = () => {
 
       <div className="flex mt-16 md:flex-row flex-col items-center justify-between gap-3">
         <div className="flex flex-col items-start justify-start md:gap-3 gap-6">
-          <div className="flex justify-center w-full md:justify-start items-center mb-5">
+          <div className="flex justify-center w-full md:justify-start items-center 2xl:size-32">
             <Image
               src="/simbaland.png"
               alt="logo"
               width={100}
               height={100}
+              priority
             />
           </div>
-          <p className="hidden md:block md:text-base text-slate-950 text-sm md:font-normal font-light">
+          <p className="hidden md:block md:text-base text-slate-950 text-sm md:font-normal font-light 2xl:text-2xl mb-16">
             Copyright © 2025 Simbaland
           </p>
         </div>
 
         <div className="flex flex-col items-start justify-start gap-3 mb-5 w-full md:w-auto">
-          <h1 className="text-lg font-semibold text-slate-950">Explore</h1>
+          <h1 className="text-lg font-semibold text-slate-950 lg:text-xl 2xl:text-3xl">Explore</h1>
           {navItems.map((navItem: any, idx: number) => (
             <Link
               key={`link=${idx}`}
@@ -68,13 +69,13 @@ const Footer = () => {
               )}
             >
               <span className="block sm:hidden">{navItem.icon}</span>
-              <span className="text-sm">{navItem.name}</span>
+              <span className="text-sm lg:text-xl 2xl:text-2xl">{navItem.name}</span>
             </Link>
           ))}
         </div>
 
         <div className="flex flex-col items-start md:gap-3 gap-6 max-w-lg mb-5">
-          <p className="text-start text-sm md:text-[16px] lg:w-lg text-slate-950">
+          <p className="text-start text-sm md:text-[16px] lg:w-lg text-slate-950 2xl:text-2xl">
             Have questions, partnerships, or media inquiries? Let’s talk — this
             is just the beginning.
           </p>
@@ -84,7 +85,7 @@ const Footer = () => {
                 key={social.id}
                 href={social.link}
                 target="_blank"
-                className="text-slate-950 dark:hover:text-purple hover:text-purple"
+                className="text-slate-950 dark:hover:text-purple hover:text-purple 2xl:size-12"
               >
                 {social.icon}
               </Link>
@@ -103,12 +104,12 @@ const socialMedia = [
   {
     id: 1,
     link: "https://x.com/simbaland25?s=21&t=nt9fQQq86uCEValOxW9VwA",
-    icon: <IconBrandX />,
+    icon: <IconBrandX className="size-full"/>,
   },
   {
     id: 2,
     link: "https://web.telegram.org/a/",
-    icon: <IconBrandTelegram />,
+    icon: <IconBrandTelegram className="size-full" />,
   },
 ];
 
