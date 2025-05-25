@@ -56,8 +56,8 @@ body {
     }
 
     .text {
-      @apply uppercase text-sm md:text-lg text-black transition-all duration-500
-         group-hover:-translate-x-6 group-hover:text-[11px] md:group-hover:text-[15px] translate-x-0;
+      @apply uppercase text-xl md:text-2xl text-black transition-all duration-500
+         group-hover:-translate-x-6 group-hover:text-[11px] md:group-hover:text-[22px] translate-x-0;
     }
 
     .arrow-wrapper {
@@ -71,7 +71,7 @@ body {
   }
 
   .heading {
-    @apply font-bold text-3xl md:text-5xl text-center text-neutral-100;
+    @apply font-bold text-3xl md:text-5xl 2xl:text-7xl text-center text-neutral-100;
   }
 }
 
