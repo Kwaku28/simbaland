@@ -19,24 +19,24 @@ export const simbaEdge = [
     title: "Strategic Engine",
     description:
       "Our flagship crypto futures signal engine — powered by elite trading intuition and strategy.",
-    icon: <IconEngine />,
+    icon: <IconEngine className="2xl:size-14" />,
   },
   {
     title: "Human-Powered Signals",
     description:
       "Backed by a human core (not bots), Simba’s Edge delivers high-accuracy, multi-TP trading signals, curated by our proprietary intelligence engine.",
-    icon: <IconTrendingUp />,
+    icon: <IconTrendingUp className="2xl:size-14" />,
   },
   {
     title: "Trusted for Results",
     description: "Trusted by communities, built for results.",
-    icon: <IconCurrencyDollar />,
+    icon: <IconCurrencyDollar className="2xl:size-14" />,
   },
   {
     title: "100% Human Touch",
     description:
       "Bots don’t trade like this. We’ve seen the charts — human edge wins.",
-    icon: <IconBrain />,
+    icon: <IconBrain className="2xl:size-14" />,
   },
 ];
 
@@ -45,13 +45,13 @@ export const simbaVerse = [
     title: "Simplifying Web3 Education",
     description:
       "SimbaVerse is Simbaland’s educational hub, offering courses, webinars, and community-led learning for beginners and enthusiasts",
-    icon: <IconPlugConnected />,
+    icon: <IconPlugConnected className="2xl:size-14" />,
   },
   {
     title: "Learn Web3 Today",
     description:
       "From crypto basics to trading strategies, it’s designed to build competence without complexity",
-    icon: <IconBook />,
+    icon: <IconBook className="2xl:size-14" />,
   },
 ];
 
@@ -60,13 +60,13 @@ export const simbaDen = [
     title: "Early-Stage Access",
     description:
       "Simba’s Den is Simbaland’s project discovery platform, helping users explore select early-stage Web3 initiatives",
-    icon: <IconDeviceIpadCog />,
+    icon: <IconDeviceIpadCog className="2xl:size-14" />,
   },
   {
     title: "Carefully Curated",
     description:
       "We conduct due diligence on featured projects to provide transparency and reduce research fatigue — but participation is always at your own risk",
-    icon: <IconCoins />,
+    icon: <IconCoins className="2xl:size-14" />,
   },
 ];
 
@@ -75,7 +75,7 @@ export const ecoData = [
     title: "Simba's Edge",
     content: (
       <div>
-        <p className="mb-8 text-xs font-normal md:text-sm text-neutral-200">
+        <p className="mb-8 text-xs font-normal md:text-sm lg:text-lg 2xl:text-2xl text-neutral-200">
           Real Trading Mastery. Delivered Daily.
         </p>
         <SimbaEdgeSection />
@@ -84,10 +84,10 @@ export const ecoData = [
     icon: '/simba-edge.jpg',
   },
   {
-    title: "SimbaVerse",
+    title: "Simba Verse",
     content: (
       <div>
-        <p className="mb-8 text-xs font-normal md:text-sm text-neutral-200">
+        <p className="mb-8 text-xs font-normal md:text-sm lg:text-lg 2xl:text-2xl text-neutral-200">
           Learn & Level Up
         </p>
         <SimbaVerseSection />
@@ -99,7 +99,7 @@ export const ecoData = [
     title: "Simba’s Den",
     content: (
       <div>
-        <p className="mb-4 text-xs font-normal md:text-sm text-neutral-200">
+        <p className="mb-4 text-xs font-normal md:text-sm lg:text-lg 2xl:text-2xl text-neutral-200">
           Access Curated Opportunities
         </p>
         <SimbaDenSection />
