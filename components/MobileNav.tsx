@@ -49,14 +49,14 @@ const MobileNavbar = () => {
             href={navItem.link}
             onClick={toggleMenu}
             className={cn(
-              "text-neutral-50 hover:text-golden-brown w-fit"
+              "text-neutral-50 hover:text-golden-brown w-fit mt-5"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="text-sm">{navItem.name}</span>
+            <span className="text-xl">{navItem.name}</span>
           </Link>
         ))}
-          <div className="absolute bottom-2 left-22 size-32 overflow-hidden">
+          <div className="absolute bottom-20 left-22 size-32 overflow-hidden">
             <Image
               src="/simbaland-white.png"
               alt="Simbaland Logo"

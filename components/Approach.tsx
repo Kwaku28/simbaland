@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const Approach = () => {
   return (
     <section
-      className="w-full py-20 lg:px-20 lg:py-36"
+      className="w-full py-20 px-5 lg:px-20 lg:py-36"
       style={{
         backgroundImage: "url('/approach-background.jpg')",
         backgroundSize: "cover",

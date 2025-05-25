@@ -10,7 +10,7 @@ const oswald = Oswald({
 
 const Hero = () => {
   return (
-    <section className="h-[72vh] lg:h-screen flex justify-start items-center bg-[url('/simba-mobile-back.jpg')] md:bg-[url('/simba-background-head.jpg')] bg-cover bg-center bg-no-repeat">
+    <section className="h-[80vh] lg:h-screen flex justify-start items-center bg-[url('/simba-mobile-back.jpg')] md:bg-[url('/simba-background-head.jpg')] bg-cover bg-center bg-no-repeat">
       {/* Optional overlay for better text readability - removed or reduced for brighter background */}
       {/* <div className="absolute inset-0 bg-black/40"></div> */}
 
@@ -25,7 +25,7 @@ const Hero = () => {
         />
       </div>
       
-      <div className="px-5 lg:px-20 lg:mt-20 relative z-10">
+      <div className="px-5 lg:px-20 mt-20 relative z-10">
         <div className="flex flex-col max-w-[89vw] md:max-w-3xl lg:max-w-[64vw] gap-4">
           <h2 className="text-lg md:text-xl lg:text-2xl 2xl:text-4xl lg:mt-10 font-bold text-neutral-100">
             Welcome to <span className="text-golden-brown">Simbaland</span>

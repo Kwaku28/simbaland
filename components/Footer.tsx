@@ -42,7 +42,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="flex mt-16 md:flex-row flex-col items-center justify-between gap-3">
+      <div className="flex mt-10 md:flex-row flex-col items-center justify-between gap-3">
         <div className="flex flex-col items-start justify-start md:gap-3 gap-6">
           <div className="flex justify-center w-full md:justify-start items-center 2xl:size-32">
             <Image
@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col items-start md:gap-3 gap-6 max-w-lg mb-5">
-          <p className="text-start text-sm md:text-[16px] lg:w-lg text-slate-950 2xl:text-2xl">
+          <p className="text-start text-sm mb-5 md:text-[16px] lg:w-lg text-slate-950 2xl:text-2xl">
             Have questions, partnerships, or media inquiries? Let’s talk — this
             is just the beginning.
           </p>
