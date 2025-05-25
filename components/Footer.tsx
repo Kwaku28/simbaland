@@ -65,7 +65,7 @@ const Footer = () => {
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
-                "text-slate-950 dark:hover:text-purple hover:text-purple"
+                "text-slate-950 hover:text-white"
               )}
             >
               <span className="block sm:hidden">{navItem.icon}</span>
@@ -85,7 +85,7 @@ const Footer = () => {
                 key={social.id}
                 href={social.link}
                 target="_blank"
-                className="text-slate-950 dark:hover:text-purple hover:text-purple 2xl:size-12"
+                className="text-slate-950 hover:text-white 2xl:size-12"
               >
                 {social.icon}
               </Link>
