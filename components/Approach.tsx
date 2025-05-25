@@ -15,7 +15,7 @@ const Approach = () => {
       }}
     >
       <h1 className="heading text-start">
-        Why <span className="text-purple">Simbaland?</span>
+        Why <span className="text-golden-brown">Simbaland?</span>
       </h1>
       <p className="text-sm mt-5 md:text-2xl md:mt-10 text-neutral-100">
         No fluff, just results
@@ -100,7 +100,7 @@ const Card = ({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onClick={handleToggle}
-      className="border group/canvas-card flex items-center justify-center border-white/[0.2] w-full p-4 h-[22rem] relative rounded-3xl"
+      className="border group/canvas-card flex items-center justify-center border-white/[0.2] w-full p-4 h-[22rem] 2xl:h-[32rem] relative rounded-3xl"
     >
       <AnimatePresence>
         {(hovered || clicked) && (
@@ -123,14 +123,14 @@ const Card = ({
           {icon}
         </div>
         <h2
-          className={`dark:text-white text-3xl ${
+          className={`dark:text-white text-3xl 2xl:text-4xl ${
             hovered || clicked ? "opacity-100" : "opacity-0"
           } relative z-10 text-black mt-4 font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center`}
         >
           {title}
         </h2>
         <p
-          className={`dark:text-white text-sm ${
+          className={`dark:text-white text-sm 2xl:text-xl ${
             hovered || clicked ? "opacity-100" : "opacity-0"
           } relative z-10 text-black mt-4 font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center`}
           style={{ color: "#e4ecff" }}
@@ -145,9 +145,9 @@ const Card = ({
 const AceternityIcon = ({ order }: { order: string }) => {
   return (
     <div>
-      <button className="relative inline-flex h-18 w-42 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-2 text-3xl font-bold text-purple backdrop-blur-3xl">
+      <button className="relative inline-flex h-18 w-48 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:ring-offset-2 focus:ring-offset-yellow-50">
+        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#d6c526_0%,#fefce8_50%,#d6c526_100%)]" />
+        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-golden-brown px-5 py-2 text-3xl font-bold text-black backdrop-blur-3xl">
           {order}
         </span>
       </button>
