@@ -162,7 +162,7 @@ export const TypewriterEffectSmooth = ({
         }}
       >
         <div
-          className={`${oswald.className} uppercase text-sm sm:text-base md:text-xl lg:text:3xl xl:text-[32px] 2xl:text-[52px]`}
+          className={`${oswald.className} uppercase text-sm sm:text-base md:text-xl lg:text:3xl xl:text-[36px] 2xl:text-[55px]`}
           style={{
             whiteSpace: "nowrap",
           }}
