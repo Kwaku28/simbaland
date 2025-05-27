@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useState } from "react";
 
 type Contact = {
-  email: string;
+  email?: string;
   telegram?: string;
   teleLink?: string;
   name: string;
@@ -163,29 +163,30 @@ export const Animatedcontact = ({
               {contact[active].designation}
             </p>
             <motion.p className="mt-8 text-lg 2xl:text-xl text-black">
-              {contact[active].email.split(" ").map((word, index) => (
-                <motion.span
-                  key={index}
-                  initial={{
-                    filter: "blur(10px)",
-                    opacity: 0,
-                    y: 5,
-                  }}
-                  animate={{
-                    filter: "blur(0px)",
-                    opacity: 1,
-                    y: 0,
-                  }}
-                  transition={{
-                    duration: 0.2,
-                    ease: "easeInOut",
-                    delay: 0.02 * index,
-                  }}
-                  className="inline-block"
-                >
-                  {word}&nbsp;
-                </motion.span>
-              ))}
+              {contact[active].email &&
+                contact[active].email.split(" ").map((word, index) => (
+                  <motion.span
+                    key={index}
+                    initial={{
+                      filter: "blur(10px)",
+                      opacity: 0,
+                      y: 5,
+                    }}
+                    animate={{
+                      filter: "blur(0px)",
+                      opacity: 1,
+                      y: 0,
+                    }}
+                    transition={{
+                      duration: 0.2,
+                      ease: "easeInOut",
+                      delay: 0.02 * index,
+                    }}
+                    className="inline-block"
+                  >
+                    {word}&nbsp;
+                  </motion.span>
+                ))}
             </motion.p>
             {contact[active].telegram && (
                 <motion.p className="mt-2 text-sm 2xl:text-xl text-black">
