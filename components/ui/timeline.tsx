@@ -33,7 +33,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="w-full font-sans md:px-20"
       ref={containerRef}
       style={{
-        backgroundImage: "url('/ecosystem-background.jpg')",
+        backgroundImage: "url('/ecosystem-background.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
