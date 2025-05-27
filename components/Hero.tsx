@@ -33,7 +33,7 @@ const Hero = () => {
           <h2 className={`${oswald.className} text-golden-brown uppercase tracking-widest font-bold text-start text-[22px]/10 md:text-4xl/14 lg:text-6xl/16 max-w-92 md:max-w-full lg:max-w-[52vw] 2xl:text-8xl/26`}>
             Explore Web3 With Confidence.
           </h2>
-          <p className="text-lg lg:text-xl max-w-[72vw] lg:max-w-[44vw] 2xl:text-3xl 2xl:max-w-[48vw] text-neutral-100">
+          <p className="text-lg lg:text-xl max-w-[68vw] lg:max-w-[40vw] 2xl:text-3xl 2xl:max-w-[48vw] text-neutral-100">
             Simplified crypto trading, education, and curated opportunities —
             all in one platform.
           </p>

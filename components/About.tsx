@@ -4,7 +4,7 @@ import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 const About = () => {
   return (
     <div
-      className="flex flex-col max-w-full py-10 lg:h-screen items-center justify-center gap-4 lg:px-20 px-5"
+      className="flex flex-col max-w-full py-10 xl:h-screen items-center justify-center gap-4 lg:px-20 px-5"
       id="about"
       style={{
         backgroundImage: "url('/about-background.jpg')",
