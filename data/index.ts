@@ -21,7 +21,6 @@ export const words = [
 
 export const contact = [
     {
-      email: "samuel.manu.sm@gmail.com",
       name: "Samuel Duodu Manu",
       designation: "CEO",
       telegram: "@SamSmrt",
@@ -29,7 +28,6 @@ export const contact = [
       src: "",
     },
     {
-      email: "Lovemensah51@gmail.com",
       name: "Godlove Mensah",
       designation: "CTO",
       telegram: "@pipsalpha1",
