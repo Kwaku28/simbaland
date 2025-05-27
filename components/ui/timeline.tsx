@@ -39,7 +39,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       }}
     >
       <div className="max-w-7xl pt-40 lg:py-30 px-4 md:px-8 lg:px-10">
-        <h2 className="text-2xl md:text-4xl lg:text-5xl 2xl:text-7xl mb-4 text-white max-w-4xl 2xl:max-w-6xl">
+        <h2 className="uppercase text-2xl md:text-4xl lg:text-5xl 2xl:text-7xl mb-4 text-white max-w-4xl 2xl:max-w-6xl">
           Our Ecosystem
         </h2>
         <p className="text-neutral-300 text-sm md:text-base 2xl:text-2xl max-w-sm 2xl:max-w-xl">
