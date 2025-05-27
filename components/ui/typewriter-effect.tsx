@@ -3,6 +3,12 @@
 import { cn } from "@/lib/utils";
 import { motion, stagger, useAnimate, useInView } from "motion/react";
 import { useEffect } from "react";
+import { Oswald } from "next/font/google";
+
+const oswald = Oswald({
+  weight: ['300', '400', '500', '600', '700'],
+  subsets: ['latin'],
+})
 
 export const TypewriterEffect = ({
   words,
@@ -156,7 +162,7 @@ export const TypewriterEffectSmooth = ({
         }}
       >
         <div
-          className="text-xs sm:text-base md:text-xl lg:text:3xl xl:text-4xl 2xl:text-[55px]"
+          className={`${oswald.className} uppercase text-sm sm:text-base md:text-xl lg:text:3xl xl:text-[32px] 2xl:text-[52px]`}
           style={{
             whiteSpace: "nowrap",
           }}
