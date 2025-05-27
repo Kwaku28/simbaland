@@ -56,8 +56,8 @@ body {
     }
 
     .text {
-      @apply uppercase text-xl md:text-2xl text-black transition-all duration-500
-         group-hover:-translate-x-6 group-hover:text-[11px] md:group-hover:text-[22px] translate-x-0;
+      @apply text-2xl md:text-3xl text-black transition-all duration-500
+         group-hover:-translate-x-6 group-hover:text-[11px] md:group-hover:text-[28px] translate-x-0;
     }
 
     .arrow-wrapper {
