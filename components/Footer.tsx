@@ -4,14 +4,13 @@ import MagicButton from "./ui/MagicButton";
 import { IconBrandTelegram, IconBrandX } from "@tabler/icons-react";
 import Link from "next/link";
 import Image from "next/image";
-import { contact, navItems } from "@/data";
+import { navItems } from "@/data";
 import { cn } from "@/lib/utils";
-import { Animatedcontact } from "./ui/animated-testimonials";
 
 const Footer = () => {
   return (
     <footer
-      className="w-full py-10 px-5 md:px-10"
+      className="w-full pt-10 px-5 md:px-10 xl:h-screen flex flex-col justify-between "
       id="contact"
       style={{
         backgroundImage: "url('/contact-background.jpg')",
@@ -19,7 +18,6 @@ const Footer = () => {
         backgroundPosition: "center",
       }}
     >
-      <Animatedcontact contact={contact} />
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw] text-black">
           <span className="text-white">Join </span>
@@ -93,7 +91,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-sm text-center font-light mt-5 md:hidden text-slate-950">
+      <p className="text-sm text-center font-light mb-5 mt-5 md:hidden text-slate-950">
         Copyright © 2025 Simbaland
       </p>
     </footer>
