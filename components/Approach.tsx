@@ -9,67 +9,69 @@ import { pnls } from "@/data";
 const Approach = () => {
   return (
     <section
-      className="w-full py-20 px-5 lg:px-20 lg:pt-36"
+      className="w-full py-20"
       style={{
         backgroundImage: "url('/approach-background.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <h1 className="heading text-start">
-        Why <span className="text-golden-brown">Simbaland?</span>
-      </h1>
-      <p className="text-sm mt-5 md:text-2xl md:mt-10 text-neutral-100">
-        No fluff, just results
-      </p>
-      <div className="my-10 md:my-15 flex flex-col lg:flex-row items-center justify-center gap-6">
-        <Card
-          title="Africa First"
-          icon={<AceternityIcon order="Localized" />}
-          description="We build with the continent in mind — every service is localized, relevant, and accessible."
-        >
-          <CanvasRevealEffect
-            animationSpeed={5.1}
-            containerClassName="bg-emerald-900"
-          />
-        </Card>
-        <Card
-          title="Human Over Bot"
-          icon={<AceternityIcon order="Expertise" />}
-          description="Simba’s Edge outperforms algorithmic bots with real trading expertise."
-        >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-black"
-            colors={[
-              [236, 72, 153],
-              [232, 121, 249],
-            ]}
-            dotSize={2}
-          />
-        </Card>
-        <Card
-          title="All-in-One Ecosystem"
-          icon={<AceternityIcon order="Unified" />}
-          description="Learn, trade, invest — all from one hub."
-        >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-sky-600"
-            colors={[[125, 211, 252]]}
-          />
-        </Card>
-        <Card
-          title="No Token Needed"
-          icon={<AceternityIcon order="Substance" />}
-          description="Simbaland is run on performance and value, not hype."
-        >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-skulled-gray-900"
-            colors={[[125, 211, 252]]}
-          />
-        </Card>
+      <div className="px-5 lg:px-20 lg:pt-10">
+        <h1 className="heading text-start">
+          Why <span className="text-golden-brown">Simbaland?</span>
+        </h1>
+        <p className="text-sm mt-5 md:text-2xl md:mt-10 text-neutral-100">
+          No fluff, just results
+        </p>
+        <div className="my-10 md:my-15 flex flex-col lg:flex-row items-center justify-center gap-6">
+          <Card
+            title="Africa First"
+            icon={<AceternityIcon order="Localized" />}
+            description="We build with the continent in mind — every service is localized, relevant, and accessible."
+          >
+            <CanvasRevealEffect
+              animationSpeed={5.1}
+              containerClassName="bg-emerald-900"
+            />
+          </Card>
+          <Card
+            title="Human Over Bot"
+            icon={<AceternityIcon order="Expertise" />}
+            description="Simba’s Edge outperforms algorithmic bots with real trading expertise."
+          >
+            <CanvasRevealEffect
+              animationSpeed={3}
+              containerClassName="bg-black"
+              colors={[
+                [236, 72, 153],
+                [232, 121, 249],
+              ]}
+              dotSize={2}
+            />
+          </Card>
+          <Card
+            title="All-in-One Ecosystem"
+            icon={<AceternityIcon order="Unified" />}
+            description="Learn, trade, invest — all from one hub."
+          >
+            <CanvasRevealEffect
+              animationSpeed={3}
+              containerClassName="bg-sky-600"
+              colors={[[125, 211, 252]]}
+            />
+          </Card>
+          <Card
+            title="No Token Needed"
+            icon={<AceternityIcon order="Substance" />}
+            description="Simbaland is run on performance and value, not hype."
+          >
+            <CanvasRevealEffect
+              animationSpeed={3}
+              containerClassName="bg-skulled-gray-900"
+              colors={[[125, 211, 252]]}
+            />
+          </Card>
+        </div>
       </div>
 
       <div className="lg:mt-32">
