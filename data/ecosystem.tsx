@@ -75,7 +75,7 @@ export const ecoData = [
     title: "Simba's Edge",
     content: (
       <div>
-        <p className="mb-8 text-xs font-normal md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-neutral-200">
+        <p className="mb-8 text-xs font-bold italic md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-neutral-200">
           Real Trading Mastery. Delivered Daily.
         </p>
         <SimbaEdgeSection />
@@ -87,7 +87,7 @@ export const ecoData = [
     title: "Simba Verse",
     content: (
       <div>
-        <p className="mb-8 text-xs font-normal md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-neutral-200">
+        <p className="mb-8 text-xs font-bold italic md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-neutral-200">
           Learn & Level Up
         </p>
         <SimbaVerseSection />
@@ -99,7 +99,7 @@ export const ecoData = [
     title: "Simba’s Den",
     content: (
       <div>
-        <p className="mb-4 text-xs font-normal md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-neutral-200">
+        <p className="mb-4 text-xs font-bold italic md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-neutral-200">
           Access Curated Opportunities
         </p>
         <SimbaDenSection />
