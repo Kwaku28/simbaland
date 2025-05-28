@@ -3,11 +3,13 @@
 import React from "react";
 import { CanvasRevealEffect } from "./ui/canvas-reveal-effect";
 import { AnimatePresence, motion } from "framer-motion";
+import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
+import { pnls } from "@/data";
 
 const Approach = () => {
   return (
     <section
-      className="w-full py-20 px-5 lg:px-20 lg:py-36"
+      className="w-full py-20 px-5 lg:px-20 lg:pt-36"
       style={{
         backgroundImage: "url('/approach-background.jpg')",
         backgroundSize: "cover",
@@ -68,6 +70,10 @@ const Approach = () => {
             colors={[[125, 211, 252]]}
           />
         </Card>
+      </div>
+
+      <div className="lg:mt-32">
+        <InfiniteMovingCards items={pnls} speed="slow" />
       </div>
     </section>
   );
