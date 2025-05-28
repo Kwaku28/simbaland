@@ -21,7 +21,7 @@ const Footer = () => {
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw] text-black">
           <span className="text-white">Join </span>
-          the Simbaland Tribe
+          the Tribe
         </h1>
         <p className="text-neutral-900 md:mt-10 my-5 text-center text-sm md:text-lg 2xl:text-2xl">
           We’re not building this alone. Join thousands of learners, traders,
