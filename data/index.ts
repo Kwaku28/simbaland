@@ -19,23 +19,6 @@ export const words = [
   },
 ];
 
-export const contact = [
-    {
-      name: "Samuel Duodu Manu",
-      designation: "CEO",
-      telegram: "@SamSmrt",
-      teleLink: "https://t.me/SamSmrt",
-      src: "",
-    },
-    {
-      name: "Godlove Mensah",
-      designation: "CTO",
-      telegram: "@pipsalpha1",
-      teleLink: "https://t.me/pipsalpha1",
-      src: "",
-    },
-  ];
-
 export const pnls = [
   {
     title: 'pnl1',
