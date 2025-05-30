@@ -28,7 +28,7 @@ const Footer = () => {
           and investors shaping Africa’s crypto future.
         </p>
         <a
-          href="mailto:simbaland.smart@gmail.com"
+          href="https://t.me/+rYHXVbHU4_QyZDJk"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -73,9 +73,12 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col items-start md:gap-3 gap-6 max-w-lg mb-5">
-          <p className="text-start text-sm mb-5 md:text-[16px] lg:w-lg text-slate-950 2xl:text-2xl">
+          <p className="text-start text-sm md:text-[16px] lg:w-lg text-slate-950 2xl:text-2xl">
             Have questions, partnerships, or media inquiries? Let’s talk — this
             is just the beginning.
+          </p>
+          <p className="text-sm text-slate-950 font-normal md:text-[16px]">
+            simbaland.smart@gmail.com
           </p>
           <div className="flex flex-row justify-start gap-3 md:gap-5">
             {socialMedia.map((social) => (
@@ -91,7 +94,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-sm text-center font-light mb-5 mt-5 md:hidden text-slate-950">
+      <p className="text-sm text-center font-light mb-5 md:hidden text-slate-950">
         Copyright © 2025 Simbaland
       </p>
     </footer>
@@ -106,7 +109,7 @@ const socialMedia = [
   },
   {
     id: 2,
-    link: "https://web.telegram.org/a/",
+    link: "https://t.me/+rYHXVbHU4_QyZDJk",
     icon: <IconBrandTelegram className="size-full" />,
   },
 ];
