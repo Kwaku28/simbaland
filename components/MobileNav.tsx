@@ -24,7 +24,7 @@ const MobileNavbar = () => {
           className="cursor-pointer"
           onClick={toggleMenu}
         >
-          {isOpen ? null : <IconMenuDeep className="size-8 text-golden-brown" />}
+          {isOpen ? null : <IconMenuDeep className="size-8 text-white" />}
         </Button>
       </div>
 
@@ -34,11 +34,11 @@ const MobileNavbar = () => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 20 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="fixed top-0 right-0 h-full w-64 dark:bg-purple-light bg-[url('/mobilenav-background.jpg')] bg-cover shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] p-6 md:hidden flex flex-col space-y-4 z-50"
+          className="fixed top-0 right-0 h-full w-64 bg-[url('/mobilenav-background.jpg')] bg-cover shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] p-6 md:hidden flex flex-col space-y-4 z-50"
         >
           <Button
             variant="ghost"
-            className="self-end mb-1 text-gray-100 hover:text-purple cursor-pointer"
+            className="self-end mb-1 text-gray-100 hover:text-golden-brown cursor-pointer"
             onClick={toggleMenu}
           >
             <IconX className="size-8" />
