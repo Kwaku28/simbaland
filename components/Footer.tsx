@@ -28,7 +28,7 @@ const Footer = () => {
           and investors shaping Africa’s crypto future.
         </p>
         <a
-          href="https://t.me/+rYHXVbHU4_QyZDJk"
+          href="https://t.me/+M7-zpDNQ41tiMTg0"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -109,7 +109,7 @@ const socialMedia = [
   },
   {
     id: 2,
-    link: "https://t.me/+rYHXVbHU4_QyZDJk",
+    link: "https://t.me/+M7-zpDNQ41tiMTg0",
     icon: <IconBrandTelegram className="size-full" />,
   },
 ];

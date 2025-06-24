@@ -50,7 +50,7 @@ const Hero = () => {
           <Button
             text="Join Us"
             className="md:w-50 md:h-16 w-40 h-12 mt-5"
-            link="https://t.me/+rYHXVbHU4_QyZDJk"
+            link="https://t.me/+M7-zpDNQ41tiMTg0"
           />
         </div>
       </div>
